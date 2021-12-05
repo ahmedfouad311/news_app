@@ -1,20 +1,22 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:flutter/material.dart';
 import 'package:newsapp/home/category_item.dart';
 
 class CategoriesScreen extends StatelessWidget {
   Function onCategoryClickToHomeScreen;
   List<Category> categories = [
-    Category('Category Id', 'Sports', 'assets/images/ball.png',
+    Category('sports', 'Sports', 'assets/images/ball.png',
         Color.fromARGB(255, 201, 28, 34)),
-    Category('Category Id', 'Politics', 'assets/images/Politics.png',
+    Category('general', 'Politics', 'assets/images/Politics.png',
         Color.fromARGB(255, 0, 62, 144)),
-    Category('Category Id', 'Health', 'assets/images/health.png',
+    Category('health', 'Health', 'assets/images/health.png',
         Color.fromARGB(255, 237, 30, 121)),
-    Category('Category Id', 'Bussines', 'assets/images/bussines.png',
+    Category('business', 'Bussines', 'assets/images/bussines.png',
         Color.fromARGB(255, 207, 126, 72)),
-    Category('Category Id', 'Environment', 'assets/images/environment.png',
+    Category('general', 'Environment', 'assets/images/environment.png',
         Color.fromARGB(255, 72, 130, 207)),
-    Category('Category Id', 'Science', 'assets/images/science.png',
+    Category('science', 'Science', 'assets/images/science.png',
         Color.fromARGB(255, 242, 211, 82)),
   ];
 
