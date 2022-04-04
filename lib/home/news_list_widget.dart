@@ -1,3 +1,5 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:flutter/material.dart';
 import 'package:newsapp/data/API_manager.dart';
 import 'package:newsapp/data/news_response.dart';

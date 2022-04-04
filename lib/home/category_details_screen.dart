@@ -1,3 +1,5 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:flutter/material.dart';
 import 'package:newsapp/data/API_manager.dart';
 import 'package:newsapp/data/sources_response.dart';
@@ -16,7 +18,7 @@ class CategoryDetailsScreen extends StatelessWidget {
         future: ApiManager.loadNewsSources(category.id),
         builder: (context, snapshot) {
           if (snapshot.hasError) {
-            return Center(child: Text(snapshot.error.toString()));
+            return Center(child: Text('Please Check Your Internet Connection and Try again'));
           }
           else if (snapshot.connectionState == ConnectionState.waiting) {
             return Center(child: CircularProgressIndicator());
